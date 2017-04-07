@@ -27,8 +27,8 @@ class MainViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        boxButton.isHidden = true
-        boxImage.isHidden = true
+//        boxButton.isHidden = true
+//        boxImage.isHidden = true
         customAlertView.isHidden = true
     }
 
