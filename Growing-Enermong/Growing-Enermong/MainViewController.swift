@@ -1,5 +1,5 @@
 //
-//  StatisticsViewController.swift
+//  MainViewController.swift
 //  Growing-Enermong
 //
 //  Created by 이씨안 on 2017. 4. 7..
@@ -8,15 +8,13 @@
 
 import UIKit
 
-class StatisticsViewController: UIViewController {
+class MainViewController: UIViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.barTintColor = UIColor(colorLiteralRed: 255/255, green: 210/255, blue: 0, alpha: 1)
-        self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
-        tabBarController?.selectedIndex=1
+        self.tabBarController?.tabBar.setValue(true, forKey: "hidesShadow")
+
         // Do any additional setup after loading the view.
     }
 
