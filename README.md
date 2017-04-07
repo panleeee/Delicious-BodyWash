@@ -1,6 +1,9 @@
 #  Seoul National University - Energy Hackathon
 
+<img src = "/ScreenShoot/poster.png" width = "500">
+
 ## Intro Story
+
 매년 여름이면 우리가 듣게 되는 뉴스 기사!
 
 “전력 수급 비상”, “XX 원전 X 호 정지”
@@ -28,12 +31,14 @@
 
 * 알람메세지를 통해 현재 상태를 텍스트로 확인할 수 있습니다.
 
+<img src = "/ScreenShoot/통계.png" width = "200">
+
 ## Setting Scene
 * 보상(선물상자)설정 - 부모님들은 이 곳에서 자녀가 뽑을 수 있는 선물 컨텐츠를 만들 수 있습니다.
 
 * 알람 on/off - 알람을 원치 않을 경우, 이 곳을 통해 off가 가능합니다.
 
-
+<img src = "/ScreenShoot/설정.png" width = "200">
 
 
 ## contributor

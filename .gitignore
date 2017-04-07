@@ -62,3 +62,8 @@ xcuserdata/
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
+
+*.jpg\n
+*.jpeg\n
+*.png\n
+*.gif\n
