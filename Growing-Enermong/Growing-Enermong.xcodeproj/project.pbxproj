@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0036405A1E97D076001723CB /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003640591E97D076001723CB /* TabBarController.swift */; };
+		0036405C1E97DE09001723CB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036405B1E97DE09001723CB /* MainViewController.swift */; };
 		009A79131E97AECC00A67DA2 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A79121E97AECC00A67DA2 /* StatisticsViewController.swift */; };
 		B5810B3D1E97798C00CECE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5810B3C1E97798C00CECE17 /* AppDelegate.swift */; };
 		B5810B3F1E97798C00CECE17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5810B3E1E97798C00CECE17 /* ViewController.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		003640591E97D076001723CB /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		0036405B1E97DE09001723CB /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		009A79121E97AECC00A67DA2 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		B5810B391E97798C00CECE17 /* Growing-Enermong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Growing-Enermong.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5810B3C1E97798C00CECE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +48,8 @@
 			children = (
 				B5AB5A2F1E97A49400AC63EB /* SettingViewController.swift */,
 				009A79121E97AECC00A67DA2 /* StatisticsViewController.swift */,
+				003640591E97D076001723CB /* TabBarController.swift */,
+				0036405B1E97DE09001723CB /* MainViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -153,6 +159,8 @@
 				009A79131E97AECC00A67DA2 /* StatisticsViewController.swift in Sources */,
 				B5810B3F1E97798C00CECE17 /* ViewController.swift in Sources */,
 				B5810B3D1E97798C00CECE17 /* AppDelegate.swift in Sources */,
+				0036405C1E97DE09001723CB /* MainViewController.swift in Sources */,
+				0036405A1E97D076001723CB /* TabBarController.swift in Sources */,
 				B5AB5A301E97A49400AC63EB /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Growing-Enermong/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Delicious-BodyWash.Growing-Enermong";
@@ -288,6 +297,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Growing-Enermong/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Delicious-BodyWash.Growing-Enermong";
