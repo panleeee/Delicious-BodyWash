@@ -12,7 +12,9 @@ import ScrollableGraphView
 class StatisticsViewController: UIViewController {
 
     @IBOutlet weak var graghView: UIView!
-    
+    var data = [Double]()
+    var labels = [String]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,13 +22,21 @@ class StatisticsViewController: UIViewController {
         self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
         tabBarController?.selectedIndex=1
         // Do any additional setup after loading the view.
+        data = [40, 80, 150, 160, 230, 420, 600]
+        labels = ["6day", "5day", "4day", "3day", "2day","1day", "Today"]
+        refresh()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    func refresh () {
         let graphView = ScrollableGraphView(frame: CGRect(x: 24, y: 120, width: 272, height: 160))
-        let data: [Double] = [4, 8, 15, 16, 23, 42]
-        let labels = ["one", "two", "three", "four", "five", "six"]
         
         graphView.backgroundFillColor = UIColor.gray
         
-        graphView.rangeMax = 50
+        graphView.rangeMax = 1300
         
         graphView.lineWidth = 1
         graphView.lineColor = UIColor.darkGray
@@ -39,7 +49,7 @@ class StatisticsViewController: UIViewController {
         graphView.fillGradientStartColor = UIColor.orange
         graphView.fillGradientEndColor = UIColor.orange
         
-        graphView.dataPointSpacing = 40
+        graphView.dataPointSpacing = 35
         graphView.dataPointSize = 2
         graphView.dataPointFillColor = UIColor.white
         
@@ -50,12 +60,10 @@ class StatisticsViewController: UIViewController {
         graphView.set(data: data, withLabels: labels)
         self.view.addSubview(graphView)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     @IBAction func refreshButton(_ sender: Any) {
+        data = [692, 186, 426, 223, 1189, 332, 359]
+        labels = ["6day", "5day", "4day", "3day", "2day","1day", "Today"]
+        refresh()
     }
     
 
