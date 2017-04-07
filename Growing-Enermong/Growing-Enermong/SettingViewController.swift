@@ -28,6 +28,7 @@ class SettingViewController: UIViewController {
         self.alarmSwitch.thumbTintColor=UIColor(colorLiteralRed: 1, green: 1, blue: 1, alpha: 1)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardUP(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardDown(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
