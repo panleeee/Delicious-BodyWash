@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/river-stone-jin/example-server#readme",
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2",
+    "express-session": "^1.15.2",
+    "install": "^0.8.8",
+    "npm": "^4.4.4",
     "request": "^2.81.0"
   }
 }

@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+}
+
+form{
+    display: inline-block;
+    width: 20vw;
+    border: 1px solid #000;
+    height: 40vh;
+    text-align: center;
+}
+form input{
+    width: 80%;
+    height: 10%;
+    margin: 2% 0;
+}
+form input[type="submit"]{
+    display: inline-block;
+    width: 80%;
+    height: 10%;
+    margin: 2% 0;
+}

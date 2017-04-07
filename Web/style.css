@@ -15,7 +15,7 @@ body{
     display: inline-block;
     width: 6rem;
     height: 6rem;
-    margin: 0 3rem;
+    margin: 0 1rem;
     background-color: #fff;   
     border-radius: 100%;
     cursor: pointer;
@@ -28,21 +28,30 @@ span{
 }
 
 #nav{
-    width: 24rem;
+    width: 16rem;
     height: 6rem;
     margin: auto;
-    position: relative;
-    top: 75%;
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
 }
+
+.modal-main{
+    position: fixed;
+    padding-top: 7%;
+    right: 2.5%;
+    visibility: hidden;
+}
+
 .modal-title{
-    width: 35vw;
+    width: 20vw;
     height: 3rem;
     background-color: #ffd200;
     text-align: center;
 }
 .modal-content{
-    width: 35vw;
-    height: 15rem;
+    width: 20vw;
+    height: 30rem;;
     background-color: #fff;
     margin: auto;
 }
@@ -50,18 +59,12 @@ span{
 .arrow-down {
   width: 0; 
   height: 0; 
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
   margin: auto;
-  border-top: 40px solid #fff;
+  border-top: 25px solid #fff;
   position: relative;
-  right: 6rem;
-}
-.modal-main{
-    position: fixed;
-    padding-top: 15%;
-    margin-left: calc(65vw /2);
-    visibility: hidden;
+  right: 3.5rem;
 }
 
 #stats{
@@ -72,7 +75,7 @@ span{
     z-index: 2
 }
 #gift .arrow-down{
-    left: 6rem;
+    left: 4.5rem;
 }
 
 #background-color{
@@ -82,5 +85,90 @@ span{
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    visibility: hidden;
 }
 
+#gift-btn{
+    background-image: url('50set.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-size: cover;*/
+}
+
+#stats-btn{
+    background-image: url('50stats.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#enermong{
+    position: absolute;
+    bottom : 5%;
+    left:  35vw;
+    transform: rotate(-15deg);
+    animation: 2s tulgi infinite;
+}
+
+#enermong:hover{
+    cursor: pointer;
+    animation: 2s flipmong infinite;
+}
+.cloud{
+    height: 5rem;
+    position: absolute;
+}
+#cloud1{
+    top: 3rem;
+    left: -12rem;
+    animation: 30s cloudLTR infinite;
+}
+#cloud2{
+    top: 12rem;
+    right: -11rem;
+    animation: 30s cloudRTL infinite;
+}
+
+#food{
+    position: absolute;
+    bottom : 5%;
+    left:  25vw;
+}
+
+@keyframes cloudLTR{
+    from{
+    left: -12rem;
+    }
+    to{
+    left: 100%;
+    }
+}
+@keyframes cloudRTL{
+    from{
+    right: -12rem;
+    }
+    to{
+    right: 100%;
+    }
+}
+@keyframes tulgi{
+    25%{
+        transform: rotate(15deg);
+    }50%{
+        transform: rotate(-15deg);
+    }75%{
+        transform: rotate(15deg);
+    }100%{
+        transform: rotate(-15deg);
+    }
+}
+@keyframes flipmong{
+    33%{
+        transform: scaleX(1);
+    }
+    66%{
+        transform: scaleX(-1);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
