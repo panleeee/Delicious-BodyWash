@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="S8U-vq-nb1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="S8U-vq-nb1">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -281,7 +281,7 @@
                                                 <color key="textColor" red="0.94901960784313721" green="0.78431372549019607" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아무말 대잔치 왈왈왈 아무말 대잔치 왈왈왈 아무말 대잔치 왈왈왈 아무말 대잔치 왈왈왈 아무말 대잔치 왈왈왈 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guj-92-XQP">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;전력 사용량이 최근 일주간 크게 줄었어요!&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guj-92-XQP">
                                                 <rect key="frame" x="22" y="75" width="244" height="79"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -383,6 +383,8 @@
         <image name="Home" width="25" height="25"/>
         <image name="Set" width="25" height="25"/>
         <image name="Stats" width="25" height="25"/>
+        <image name="bar_off" width="333" height="14"/>
+        <image name="bar_on" width="333" height="14"/>
         <image name="off" width="84" height="36"/>
         <image name="on" width="84" height="36"/>
     </resources>
