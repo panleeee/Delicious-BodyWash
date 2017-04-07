@@ -1,6 +1,9 @@
 #  Seoul National University - Energy Hackathon
 
+<img src = "/ScreenShoot/poster.png" width = "500">
+
 ## Intro Story
+
 매년 여름이면 우리가 듣게 되는 뉴스 기사!
 
 “전력 수급 비상”, “XX 원전 X 호 정지”
@@ -20,18 +23,22 @@
 * 에너몽의 성장과정 : 에너지를 먹음 -> 경험치가 쌓임 -> 성장
 
 * 성장할 때마다, 에너몽은 감사의 표시로 아이들에게 선물 상자를 줍니다. 아이들은 부모님께서 미리 설정했던, 선물은 하나를 선물 상자를 통해 받게 됩니다.
+* ### 상태(에너몽의 초기 모델)
+<img src = "/ScreenShoot/초기 모델.png" width = "200">
 
 ## Energy Chart Scene
 * 부모님과 아이들은 에너지 차트를 통해 당일과 일주일간 스위치가 켜져있던 시간을 보다 쉽게 확인 할 수 있습니다.
 
 * 알람메세지를 통해 현재 상태를 텍스트로 확인할 수 있습니다.
 
+<img src = "/ScreenShoot/통계.png" width = "200">
+
 ## Setting Scene
 * 보상(선물상자)설정 - 부모님들은 이 곳에서 자녀가 뽑을 수 있는 선물 컨텐츠를 만들 수 있습니다.
 
 * 알람 on/off - 알람을 원치 않을 경우, 이 곳을 통해 off가 가능합니다.
 
-
+<img src = "/ScreenShoot/설정.png" width = "200">
 
 
 ## contributor
