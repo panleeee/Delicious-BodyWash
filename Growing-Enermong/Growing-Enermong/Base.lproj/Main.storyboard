@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="S8U-vq-nb1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="S8U-vq-nb1">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -229,13 +229,114 @@
                     <view key="view" contentMode="scaleToFill" id="uR3-1X-9a7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="bXX-lV-pEl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="normal" translatesAutoresizingMaskIntoConstraints="NO" id="Z6y-ON-GQV">
+                                <rect key="frame" x="40" y="179" width="240" height="279"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8IX-xE-K1E">
+                                <rect key="frame" x="96" y="43" width="128" height="128"/>
+                                <state key="normal" title=" "/>
+                                <connections>
+                                    <action selector="boxButtonTouch:" destination="tXM-Sg-8MR" eventType="touchUpInside" id="0f6-IQ-0db"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="newbox" translatesAutoresizingMaskIntoConstraints="NO" id="SLp-Qy-chK">
+                                <rect key="frame" x="96" y="43" width="128" height="128"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xAQ-jP-FYC">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="openbox" translatesAutoresizingMaskIntoConstraints="NO" id="8RM-Ib-w6l">
+                                        <rect key="frame" x="40" y="204" width="240" height="160"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="선물을 받았어요!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7yk-BV-N3b">
+                                        <rect key="frame" x="73" y="143" width="172" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="m5g-M6-YjX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuT-ZG-XoT">
+                                        <rect key="frame" x="56" y="301" width="209" height="63"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="63" id="0lI-a7-lgj"/>
+                                        </constraints>
+                                        <state key="normal" title="확인"/>
+                                        <connections>
+                                            <action selector="customAlertButtonTouch:" destination="tXM-Sg-8MR" eventType="touchUpInside" id="wsv-Td-3zy"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아무말 대잔치 왈왈왈 아무말 대잔치 왈왈왈 아무말" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="XHw-i1-pX8">
+                                        <rect key="frame" x="62" y="252" width="196" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="XHw-i1-pX8" secondAttribute="height" multiplier="145:36" constant="2.6666666666666856" id="FWo-f0-giD"/>
+                                            <constraint firstAttribute="height" constant="48" id="aZe-TD-Us6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.34999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="XHw-i1-pX8" firstAttribute="centerX" secondItem="MuT-ZG-XoT" secondAttribute="centerX" id="1Ag-kl-2Qd"/>
+                                    <constraint firstItem="MuT-ZG-XoT" firstAttribute="leading" secondItem="xAQ-jP-FYC" secondAttribute="leading" constant="56" id="26k-rK-tNt"/>
+                                    <constraint firstItem="8RM-Ib-w6l" firstAttribute="centerX" secondItem="MuT-ZG-XoT" secondAttribute="centerX" id="41I-6E-jYP"/>
+                                    <constraint firstItem="7yk-BV-N3b" firstAttribute="leading" secondItem="xAQ-jP-FYC" secondAttribute="leading" constant="73" id="C6e-J0-mgW"/>
+                                    <constraint firstItem="8RM-Ib-w6l" firstAttribute="centerX" secondItem="xAQ-jP-FYC" secondAttribute="centerX" id="EKz-NC-vA7"/>
+                                    <constraint firstItem="XHw-i1-pX8" firstAttribute="top" secondItem="7yk-BV-N3b" secondAttribute="bottom" constant="73" id="Jvn-xn-YvP"/>
+                                    <constraint firstItem="8RM-Ib-w6l" firstAttribute="top" secondItem="7yk-BV-N3b" secondAttribute="bottom" constant="25" id="MuF-iJ-rfX"/>
+                                    <constraint firstItem="XHw-i1-pX8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xAQ-jP-FYC" secondAttribute="leading" constant="62" id="S8E-gS-Dwh"/>
+                                    <constraint firstItem="8RM-Ib-w6l" firstAttribute="centerY" secondItem="xAQ-jP-FYC" secondAttribute="centerY" id="aeC-fV-reC"/>
+                                    <constraint firstAttribute="trailing" secondItem="7yk-BV-N3b" secondAttribute="trailing" constant="75" id="eIh-6n-lTw"/>
+                                    <constraint firstItem="8RM-Ib-w6l" firstAttribute="bottom" secondItem="MuT-ZG-XoT" secondAttribute="bottom" id="hEY-0X-zOM"/>
+                                    <constraint firstItem="MuT-ZG-XoT" firstAttribute="top" secondItem="XHw-i1-pX8" secondAttribute="bottom" constant="1" id="oX3-NX-eCW"/>
+                                    <constraint firstItem="8RM-Ib-w6l" firstAttribute="leading" secondItem="xAQ-jP-FYC" secondAttribute="leading" constant="40" id="p28-yd-IN2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bXX-lV-pEl" firstAttribute="top" secondItem="uR3-1X-9a7" secondAttribute="top" id="2ih-cf-flM"/>
+                            <constraint firstItem="8IX-xE-K1E" firstAttribute="leading" secondItem="SLp-Qy-chK" secondAttribute="leading" id="7bP-Fg-5lv"/>
+                            <constraint firstItem="xAQ-jP-FYC" firstAttribute="leading" secondItem="bXX-lV-pEl" secondAttribute="leading" id="Dzy-tN-XxD"/>
+                            <constraint firstItem="8IX-xE-K1E" firstAttribute="top" secondItem="3c4-Qr-X9V" secondAttribute="bottom" constant="23" id="GHh-z7-V1h"/>
+                            <constraint firstItem="Z6y-ON-GQV" firstAttribute="top" secondItem="SLp-Qy-chK" secondAttribute="bottom" constant="8" symbolic="YES" id="HRk-RQ-P4H"/>
+                            <constraint firstItem="8IX-xE-K1E" firstAttribute="trailing" secondItem="SLp-Qy-chK" secondAttribute="trailing" id="ID7-yF-f4y"/>
+                            <constraint firstItem="xAQ-jP-FYC" firstAttribute="trailing" secondItem="bXX-lV-pEl" secondAttribute="trailing" id="NKi-NO-iOy"/>
+                            <constraint firstItem="bXX-lV-pEl" firstAttribute="bottom" secondItem="NZO-y3-EHx" secondAttribute="top" constant="49" id="PqQ-84-wxp"/>
+                            <constraint firstItem="bXX-lV-pEl" firstAttribute="leading" secondItem="uR3-1X-9a7" secondAttribute="leading" id="RLO-g7-UOc"/>
+                            <constraint firstItem="NZO-y3-EHx" firstAttribute="top" secondItem="Z6y-ON-GQV" secondAttribute="bottom" constant="61" id="SwY-eC-xUV"/>
+                            <constraint firstItem="Z6y-ON-GQV" firstAttribute="centerX" secondItem="bXX-lV-pEl" secondAttribute="centerX" id="Wu1-Hi-rUr"/>
+                            <constraint firstItem="xAQ-jP-FYC" firstAttribute="bottom" secondItem="bXX-lV-pEl" secondAttribute="bottom" id="Y8N-ng-ZuU"/>
+                            <constraint firstItem="SLp-Qy-chK" firstAttribute="centerX" secondItem="Z6y-ON-GQV" secondAttribute="centerX" id="auC-2L-kXc"/>
+                            <constraint firstItem="8IX-xE-K1E" firstAttribute="leading" secondItem="uR3-1X-9a7" secondAttribute="leadingMargin" constant="80" id="c9G-3B-wjA"/>
+                            <constraint firstItem="SLp-Qy-chK" firstAttribute="top" secondItem="8IX-xE-K1E" secondAttribute="top" id="cZ8-Ng-JNv"/>
+                            <constraint firstItem="Z6y-ON-GQV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3c4-Qr-X9V" secondAttribute="bottom" constant="159" id="dwW-cD-SW8"/>
+                            <constraint firstItem="Z6y-ON-GQV" firstAttribute="top" secondItem="8IX-xE-K1E" secondAttribute="bottom" constant="8" symbolic="YES" id="hyy-q8-sYA"/>
+                            <constraint firstAttribute="trailing" secondItem="bXX-lV-pEl" secondAttribute="trailing" id="jMs-Up-AKb"/>
+                            <constraint firstItem="Z6y-ON-GQV" firstAttribute="leading" secondItem="uR3-1X-9a7" secondAttribute="leadingMargin" constant="24" id="mA6-Ua-vuH"/>
+                            <constraint firstItem="xAQ-jP-FYC" firstAttribute="top" secondItem="bXX-lV-pEl" secondAttribute="top" id="qnO-WJ-dor"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" image="Home" id="fyO-ih-ZiB"/>
+                    <connections>
+                        <outlet property="boxButton" destination="8IX-xE-K1E" id="YC7-6e-wdu"/>
+                        <outlet property="boxImage" destination="SLp-Qy-chK" id="HoL-jD-Uud"/>
+                        <outlet property="char" destination="Z6y-ON-GQV" id="Elo-Oz-qc4"/>
+                        <outlet property="customAlertButton" destination="MuT-ZG-XoT" id="fO8-py-Fiq"/>
+                        <outlet property="customAlertLabel" destination="XHw-i1-pX8" id="hRb-5k-mGT"/>
+                        <outlet property="customAlertView" destination="xAQ-jP-FYC" id="NTU-kg-dP6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ox-ug-GWQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="574" y="677"/>
+            <point key="canvasLocation" x="573.75" y="676.05633802816897"/>
         </scene>
         <!--통계-->
         <scene sceneID="FUZ-yM-KGR">
@@ -380,12 +481,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Background" width="1342" height="2460"/>
         <image name="Home" width="25" height="25"/>
         <image name="Set" width="25" height="25"/>
         <image name="Stats" width="25" height="25"/>
         <image name="bar_off" width="333" height="14"/>
         <image name="bar_on" width="333" height="14"/>
+        <image name="newbox" width="692" height="692"/>
+        <image name="normal" width="775" height="1137"/>
         <image name="off" width="84" height="36"/>
         <image name="on" width="84" height="36"/>
+        <image name="openbox" width="996" height="657"/>
     </resources>
 </document>
