@@ -1,22 +1,32 @@
 body{
     margin: 0;
+    background-color: #ffd200;
+    font-size: 0;
 }
 
+.form-title{
+    padding: 1rem 0;
+    font-size: 1rem;
+    background-color: #ff0;
+}
 form{
     display: inline-block;
     width: 20vw;
     border: 1px solid #000;
     height: 40vh;
     text-align: center;
+    background-color: #fff;
+    margin: 20% 0 0 20%;
 }
 form input{
     width: 80%;
     height: 10%;
-    margin: 2% 0;
+    margin: 3% 0;
 }
 form input[type="submit"]{
     display: inline-block;
+    font-size: 2rem;
     width: 80%;
-    height: 10%;
+    height: 10vh;
     margin: 2% 0;
 }

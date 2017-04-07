@@ -48,18 +48,6 @@ app.get('/Useage', function (req, res) {
     // res.sendfile(__dirname + "/signUp.html");
 });
 
-app.get('/getNowPower', function (req, res) {
-    res.send({
-        data: [
-            ['Year', 'Sales'],
-            ['2013', 523],
-            ['2014', 123],
-            ['2015', 293],
-            ['2016', 442],
-            ['2017', 111],
-            ['2018', 700],
-        ]
-    });
     // if(isOn){
     // request('https://enermong.scalingo.io/api/1/23414/off', function (error, response, body) {
     //     isOn = false;
@@ -71,8 +59,11 @@ app.get('/getNowPower', function (req, res) {
     //     isOn = true;
     // }); 
     // }
+app.get('/getMongInfo',function(req,res){
+    request('https://enermong.scalingo.io/api/'+req.session.clientID+'/loadmain',function(err,response,body){
+        res.send(body);
+    });
 });
-
 
 app.post('/signIn', function (req, res) {
     var email = req.body.email;

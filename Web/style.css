@@ -134,6 +134,34 @@ span{
     left:  25vw;
 }
 
+#gift-box{
+    position: absolute;
+    right: 2%;
+    top: 20%;
+    cursor: pointer;
+}
+
+#gift-modal{
+    position: fixed;
+    left: 35%;
+    z-index: 0;
+}
+
+#background-color h1{
+    top: 15%;
+    left: 37.5%;
+    font-size:1.5rem;
+    text-align:center;
+    position:fixed;
+    z-index: 1;
+}
+
+#gift-modal::after{
+    
+    content: '에버랜드 1회 이용권!';
+    font-size: 3rem;
+}
+
 @keyframes cloudLTR{
     from{
     left: -12rem;
