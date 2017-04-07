@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    font-size: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#view{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+.button{
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 3rem;
+    background-color: #fff;   
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+span{
+    position: relative;
+    top: 1rem;
+    font-size: 1rem;
+}
+
+#nav{
+    width: 24rem;
+    height: 6rem;
+    margin: auto;
+    position: relative;
+    top: 75%;
+}
+.modal-title{
+    width: 35vw;
+    height: 3rem;
+    background-color: #ffd200;
+    text-align: center;
+}
+.modal-content{
+    width: 35vw;
+    height: 15rem;
+    background-color: #fff;
+    margin: auto;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  margin: auto;
+  border-top: 40px solid #fff;
+  position: relative;
+  right: 6rem;
+}
+.modal-main{
+    position: fixed;
+    padding-top: 15%;
+    margin-left: calc(65vw /2);
+    visibility: hidden;
+}
+
+#stats{
+    z-index: 1;
+}
+
+#gift{
+    z-index: 2
+}
+#gift .arrow-down{
+    left: 6rem;
+}
+
+#background-color{
+    position: fixed;
+    z-index: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+

@@ -1,0 +1,23 @@
+{
+  "name": "aquery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/river-stone-jin/example-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/river-stone-jin/example-server/issues"
+  },
+  "homepage": "https://github.com/river-stone-jin/example-server#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "request": "^2.81.0"
+  }
+}
