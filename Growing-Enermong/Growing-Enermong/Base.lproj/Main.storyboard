@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="S8U-vq-nb1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="S8U-vq-nb1">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -169,7 +169,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="sgw-yl-3fh" secondAttribute="height" multiplier="49:31" id="BdL-Wp-x8F"/>
                                         </constraints>
-                                        <color key="onTintColor" red="0.94901960780000005" green="0.71372549019999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="onTintColor" red="1" green="0.82352941180000006" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="알림" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeH-ES-9oP">
                                         <rect key="frame" x="8" y="16" width="30" height="20.5"/>
@@ -221,7 +221,7 @@
         <!--홈-->
         <scene sceneID="cWR-oK-49r">
             <objects>
-                <viewController storyboardIdentifier="home" id="tXM-Sg-8MR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" id="tXM-Sg-8MR" customClass="MainViewController" customModule="Growing_Enermong" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3c4-Qr-X9V"/>
                         <viewControllerLayoutGuide type="bottom" id="NZO-y3-EHx"/>
@@ -231,7 +231,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="홈" id="fyO-ih-ZiB"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="Home" id="fyO-ih-ZiB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ox-ug-GWQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -327,6 +327,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="zxU-Jn-SvD" kind="relationship" relationship="viewControllers" id="6UR-dl-fbE"/>
@@ -342,12 +343,12 @@
         <scene sceneID="muh-00-xlP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zxU-Jn-SvD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="통계" id="iLG-u7-npG"/>
+                    <tabBarItem key="tabBarItem" title="통계" image="Stats" id="iLG-u7-npG"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Lc-eR-gbH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="0.82352941180000006" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="0.82352941180000006" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -362,7 +363,7 @@
         <scene sceneID="6Ky-X4-0Oa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OUp-h2-L2f" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="설정" id="BCH-5A-lQ8"/>
+                    <tabBarItem key="tabBarItem" title="설정" image="Set" id="BCH-5A-lQ8"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="iqe-KD-r5T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -379,8 +380,12 @@
         </scene>
     </scenes>
     <resources>
+
         <image name="bar_off" width="333" height="14"/>
         <image name="bar_on" width="333" height="14"/>
+        <image name="Home" width="25" height="25"/>
+        <image name="Set" width="25" height="25"/>
+        <image name="Stats" width="25" height="25"/>
         <image name="off" width="84" height="36"/>
         <image name="on" width="84" height="36"/>
     </resources>
