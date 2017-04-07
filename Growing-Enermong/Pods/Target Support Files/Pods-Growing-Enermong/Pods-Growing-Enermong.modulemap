@@ -1,0 +1,6 @@
+framework module Pods_Growing_Enermong {
+  umbrella header "Pods-Growing-Enermong-umbrella.h"
+
+  export *
+  module * { export * }
+}

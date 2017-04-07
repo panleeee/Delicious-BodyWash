@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import ScrollableGraphView
 
 class StatisticsViewController: UIViewController {
 
+    @IBOutlet weak var graghView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +20,35 @@ class StatisticsViewController: UIViewController {
         self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
         tabBarController?.selectedIndex=1
         // Do any additional setup after loading the view.
+        let graphView = ScrollableGraphView(frame: CGRect(x: 24, y: 120, width: 272, height: 160))
+        let data: [Double] = [4, 8, 15, 16, 23, 42]
+        let labels = ["one", "two", "three", "four", "five", "six"]
+        
+        graphView.backgroundFillColor = UIColor.gray
+        
+        graphView.rangeMax = 50
+        
+        graphView.lineWidth = 1
+        graphView.lineColor = UIColor.darkGray
+        graphView.lineStyle = ScrollableGraphViewLineStyle.smooth
+        
+        graphView.shouldFill = true
+        graphView.fillType = ScrollableGraphViewFillType.gradient
+        graphView.fillColor = UIColor.red
+        graphView.fillGradientType = ScrollableGraphViewGradientType.linear
+        graphView.fillGradientStartColor = UIColor.orange
+        graphView.fillGradientEndColor = UIColor.orange
+        
+        graphView.dataPointSpacing = 80
+        graphView.dataPointSize = 2
+        graphView.dataPointFillColor = UIColor.white
+        
+        graphView.referenceLineLabelFont = UIFont.boldSystemFont(ofSize: 8)
+        graphView.referenceLineColor = UIColor.white.withAlphaComponent(0.2)
+        graphView.referenceLineLabelColor = UIColor.white
+        graphView.dataPointLabelColor = UIColor.white.withAlphaComponent(0.5)
+        graphView.set(data: data, withLabels: labels)
+        self.view.addSubview(graphView)
     }
 
     override func didReceiveMemoryWarning() {
