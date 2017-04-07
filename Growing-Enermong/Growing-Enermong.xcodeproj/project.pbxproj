@@ -35,6 +35,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00271E4F1E978BD500B24DEB /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		B5810B301E97798C00CECE17 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +63,7 @@
 			children = (
 				B5810B3C1E97798C00CECE17 /* AppDelegate.swift */,
 				B5810B3E1E97798C00CECE17 /* ViewController.swift */,
+				00271E4F1E978BD500B24DEB /* New Group */,
 				B5810B401E97798C00CECE17 /* Main.storyboard */,
 				B5810B431E97798C00CECE17 /* Assets.xcassets */,
 				B5810B451E97798C00CECE17 /* LaunchScreen.storyboard */,
@@ -299,6 +307,7 @@
 				B5810B4D1E97798C00CECE17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
