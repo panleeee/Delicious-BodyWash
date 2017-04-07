@@ -39,7 +39,7 @@ class StatisticsViewController: UIViewController {
         graphView.fillGradientStartColor = UIColor.orange
         graphView.fillGradientEndColor = UIColor.orange
         
-        graphView.dataPointSpacing = 80
+        graphView.dataPointSpacing = 40
         graphView.dataPointSize = 2
         graphView.dataPointFillColor = UIColor.white
         
@@ -55,16 +55,9 @@ class StatisticsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func refreshButton(_ sender: Any) {
+    }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

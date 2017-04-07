@@ -13,7 +13,6 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var alarmSwitch: UISwitch!
     @IBOutlet weak var alarm: UILabel!
     @IBOutlet weak var randomBox: UILabel!
-    
     @IBOutlet weak var box1Text: UITextField!
     @IBOutlet weak var box2Text: UITextField!
     @IBOutlet weak var box3Text: UITextField!
