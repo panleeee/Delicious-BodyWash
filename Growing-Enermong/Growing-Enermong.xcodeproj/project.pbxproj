@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		009A79131E97AECC00A67DA2 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009A79121E97AECC00A67DA2 /* StatisticsViewController.swift */; };
 		B5810B3D1E97798C00CECE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5810B3C1E97798C00CECE17 /* AppDelegate.swift */; };
 		B5810B3F1E97798C00CECE17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5810B3E1E97798C00CECE17 /* ViewController.swift */; };
 		B5810B421E97798C00CECE17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5810B401E97798C00CECE17 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		009A79121E97AECC00A67DA2 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
 		B5810B391E97798C00CECE17 /* Growing-Enermong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Growing-Enermong.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5810B3C1E97798C00CECE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5810B3E1E97798C00CECE17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,11 +37,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00271E4F1E978BD500B24DEB /* New Group */ = {
+		00271E4F1E978BD500B24DEB /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				009A79121E97AECC00A67DA2 /* StatisticsViewController.swift */,
 			);
-			name = "New Group";
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		B5810B301E97798C00CECE17 = {
@@ -63,7 +66,7 @@
 			children = (
 				B5810B3C1E97798C00CECE17 /* AppDelegate.swift */,
 				B5810B3E1E97798C00CECE17 /* ViewController.swift */,
-				00271E4F1E978BD500B24DEB /* New Group */,
+				00271E4F1E978BD500B24DEB /* Controllers */,
 				B5810B401E97798C00CECE17 /* Main.storyboard */,
 				B5810B431E97798C00CECE17 /* Assets.xcassets */,
 				B5810B451E97798C00CECE17 /* LaunchScreen.storyboard */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009A79131E97AECC00A67DA2 /* StatisticsViewController.swift in Sources */,
 				B5810B3F1E97798C00CECE17 /* ViewController.swift in Sources */,
 				B5810B3D1E97798C00CECE17 /* AppDelegate.swift in Sources */,
 			);

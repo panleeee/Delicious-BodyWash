@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -31,7 +32,7 @@
         <!--홈-->
         <scene sceneID="cWR-oK-49r">
             <objects>
-                <viewController id="tXM-Sg-8MR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" id="tXM-Sg-8MR" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3c4-Qr-X9V"/>
                         <viewControllerLayoutGuide type="bottom" id="NZO-y3-EHx"/>
@@ -47,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="574" y="677"/>
         </scene>
-        <!--View Controller-->
+        <!--통계-->
         <scene sceneID="FUZ-yM-KGR">
             <objects>
-                <viewController id="eYo-RR-Uf1" sceneMemberID="viewController">
+                <viewController id="eYo-RR-Uf1" customClass="StatisticsViewController" customModule="Growing_Enermong" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UHY-3X-qRJ"/>
                         <viewControllerLayoutGuide type="bottom" id="vJt-JX-D6y"/>
@@ -58,13 +59,76 @@
                     <view key="view" contentMode="scaleToFill" id="FbX-x5-mdr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="6cs-9Z-L6g">
+                                <rect key="frame" x="16" y="75" width="288" height="432"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KgE-nA-R3i">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="208"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전등이 켜져있는 시간" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="guu-fb-R5g">
+                                                <rect key="frame" x="8" y="8" width="272" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.94999999999999996" green="0.77769607843137245" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="guu-fb-R5g" firstAttribute="leading" secondItem="KgE-nA-R3i" secondAttribute="leadingMargin" id="AJM-8r-PS4"/>
+                                            <constraint firstItem="guu-fb-R5g" firstAttribute="trailing" secondItem="KgE-nA-R3i" secondAttribute="trailingMargin" id="MEC-Gt-VB7"/>
+                                            <constraint firstItem="guu-fb-R5g" firstAttribute="top" secondItem="KgE-nA-R3i" secondAttribute="topMargin" id="aLx-cr-ISW"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yRd-gd-hbg">
+                                        <rect key="frame" x="0.0" y="224" width="288" height="208"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘의 메시지" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gES-Gc-jkF">
+                                                <rect key="frame" x="8" y="8" width="272" height="21"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="21" id="RTG-Uk-qLl"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="textColor" red="0.94901960784313721" green="0.78431372549019607" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아무말 대잔치 왈왈왈 아무말 대잔치 왈왈왈 아무말 대잔치 왈왈왈 아무말 대잔치 왈왈왈 아무말 대잔치 왈왈왈 " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guj-92-XQP">
+                                                <rect key="frame" x="22" y="75" width="244" height="79"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="gES-Gc-jkF" firstAttribute="trailing" secondItem="guj-92-XQP" secondAttribute="trailing" constant="14" id="5wB-Ix-GEI"/>
+                                            <constraint firstItem="gES-Gc-jkF" firstAttribute="trailing" secondItem="yRd-gd-hbg" secondAttribute="trailingMargin" id="Cex-b5-CT6"/>
+                                            <constraint firstItem="guj-92-XQP" firstAttribute="top" secondItem="gES-Gc-jkF" secondAttribute="bottom" constant="46" id="M6E-ze-v6I"/>
+                                            <constraint firstItem="gES-Gc-jkF" firstAttribute="leading" secondItem="guj-92-XQP" secondAttribute="leading" constant="-14" id="M82-E4-Hcb"/>
+                                            <constraint firstItem="guj-92-XQP" firstAttribute="bottom" secondItem="yRd-gd-hbg" secondAttribute="bottomMargin" constant="-46" id="MQA-Nt-jU6"/>
+                                            <constraint firstItem="gES-Gc-jkF" firstAttribute="leading" secondItem="yRd-gd-hbg" secondAttribute="leadingMargin" id="QJP-sr-JS4"/>
+                                            <constraint firstItem="gES-Gc-jkF" firstAttribute="top" secondItem="yRd-gd-hbg" secondAttribute="topMargin" id="ocb-NF-2fj"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="yRd-gd-hbg" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6cs-9Z-L6g" secondAttribute="top" constant="224" id="MPs-ge-80t"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vJt-JX-D6y" firstAttribute="top" secondItem="6cs-9Z-L6g" secondAttribute="bottom" constant="12" id="HPZ-1E-WT2"/>
+                            <constraint firstItem="6cs-9Z-L6g" firstAttribute="leading" secondItem="FbX-x5-mdr" secondAttribute="leadingMargin" id="Pfa-ko-kaj"/>
+                            <constraint firstItem="6cs-9Z-L6g" firstAttribute="trailing" secondItem="FbX-x5-mdr" secondAttribute="trailingMargin" id="XT3-KD-Ql9"/>
+                            <constraint firstItem="6cs-9Z-L6g" firstAttribute="top" secondItem="UHY-3X-qRJ" secondAttribute="bottom" constant="11" id="k7U-nb-qmB"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="8Pi-bY-7la"/>
+                    <navigationItem key="navigationItem" title="통계" id="8Pi-bY-7la"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bsk-gk-6D0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-113" y="1499"/>
+            <point key="canvasLocation" x="-114.375" y="1498.943661971831"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="vRe-ys-pLM">
@@ -94,6 +158,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Lc-eR-gbH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.82352941180000006" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
