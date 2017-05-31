@@ -17,7 +17,7 @@
 어린 아이들은 왜 전등을 끄고, 안쓰는 제품의 플러그를 뽑지는 이해하지 못합니다. 그래서 부모님의 잔소리를 통해 습관화가 되는 경우가 많습니다. ‘맛있는 바디워시' 팀은 우리 사회의 미래인 아이들이 전기를 절약하는 습관을 재미있는 방식으로 기를 수 있도록 도와줄 해결책을 만들었습니다. 지금부터 맛있는 바디워시와 함께 아이들에게 올바른 에너지 사용 습관을 기를 수 있는 방법을 선물해봅시다.
 
 
-[![Video Label](http:///img.youtube.com/vi/Bj6Fb2SLsCc/0.jpg)](https://youtu.be/Bj6Fb2SLsCc)
+[![에너몽 동영상(클릭!)](http:///img.youtube.com/vi/Bj6Fb2SLsCc/0.jpg)](https://youtu.be/Bj6Fb2SLsCc)
 
  
 ## Main Scene - 에너몽(Enermong)
